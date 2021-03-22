@@ -14,6 +14,10 @@ $./mvnw spring-boot:run -Pprod
 
 $ mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8888
 
+
+$ mvnw package
+$ java -jar target/<FILENAME.JAR HERE> --server.port=8888
+
 ```
 
 
