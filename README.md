@@ -12,6 +12,8 @@ $ gralew bootRun --args='--server.port=8888'
 
 $./mvnw spring-boot:run -Pprod
 
+$ mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8888
+
 ```
 
 
