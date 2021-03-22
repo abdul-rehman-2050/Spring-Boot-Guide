@@ -14,3 +14,32 @@ Actuator --> Starter for using Spring Boot's Actuator which provides production 
 DevTool --> additional set of tools that can make the application development experience a little more pleasant
 Lombok --> Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate getters and setters for those object automatically by using Lombok annotations. The easiest way is to use the @Data annotation.
 ```
+
+
+# Demo Class for Hello World!
+
+```java
+package com.demo;
+
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@EnableAutoConfiguration
+public class DemoApplication {
+
+    @RequestMapping("/")
+    String home() {
+        return "Hello World!";
+    }
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+
+}
+
+
+```
