@@ -10,6 +10,8 @@ $ curl https://start.spring.io/starter.zip -d language=kotlin -d dependencies=we
 
 $ gralew bootRun --args='--server.port=8888'
 
+$./mvnw spring-boot:run -Pprod
+
 ```
 
 
