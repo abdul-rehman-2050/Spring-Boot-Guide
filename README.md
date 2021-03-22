@@ -4,8 +4,11 @@ Spring Boot guide and resources for Starter
 # Create Project from Curl Command Line
 
 ```
+$ sudo apt-get install unzip
 $ mkdir blog && cd blog
-$ curl https://start.spring.io/starter.zip -d language=kotlin -d dependencies=web,mustache,jpa,h2,devtools -d packageName=com.example.blog -d name=Blog -o blog.zip
+$ curl https://start.spring.io/starter.zip -d language=kotlin -d dependencies=web,mustache,jpa,h2,devtools -d packageName=com.example.blog -d name=Blog -o blog.zip -d type=gradle-project
+
+$ gralew bootRun --args='--server.port=8888'
 
 ```
 
