@@ -1,6 +1,14 @@
 # Spring-Boot-Guide
 Spring Boot guide and resources for Starter
 
+# Create Project from Curl Command Line
+
+```
+$ mkdir blog && cd blog
+$ curl https://start.spring.io/starter.zip -d language=kotlin -d dependencies=web,mustache,jpa,h2,devtools -d packageName=com.example.blog -d name=Blog -o blog.zip
+
+```
+
 
 # Basic Dependency 
  List of Dependency I have to add for this tutorial.
