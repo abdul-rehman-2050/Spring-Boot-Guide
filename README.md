@@ -73,6 +73,17 @@ sudo mysql
 mysql>CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 mysql>GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 mysql>FLUSH PRIVILEGES;
+
+
+mysql> CREATE DATABASE testDB;
+mysql> SHOW DATABASES;
+mysql> USE testDB;
+
+
+
+
+
+
 mysql>EXIT;
 
 
