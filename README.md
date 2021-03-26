@@ -65,3 +65,17 @@ public class DemoApplication {
 
 
 ```
+
+# MYSQL Guide
+By defualt MYSQL on EC2 do not use any password we can login to mysql using 
+```
+sudo mysql
+mysql>CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+mysql>GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+mysql>FLUSH PRIVILEGES;
+mysql>EXIT;
+
+
+```
+
+
